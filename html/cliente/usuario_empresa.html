@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Manual do Cliente - eProcurement</title>
+        <link rel="stylesheet" href="../../stylesheets/styles.css">
+        <link rel="stylesheet" href="../../stylesheets/github-dark.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="../../javascripts/main.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    </head>
+    <body>
+
+        <header>
+            <h1>eProcurement</h1>
+            <p>Documentação do Cliente - eProcurement</p>
+        </header>
+
+        <div id="banner">
+            <span id="logo"></span>
+
+            <a href="../../index.html" class="button"><strong>Página Inicial</strong></a>
+
+            <div class="downloads">
+                <span>Downloads:</span>
+                <ul>
+                    <li><a href="https://github.com/eprocurement-lecom/eprocurement-lecom.github.io/releases/download/v4/Manual_eProcurement_v4-Clientes.pdf" class="button">Clientes</a></li>
+                </ul>
+            </div>
+        </div><!-- end banner -->
+
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li class="tag-h2">
+                        <a href="introducao.html">INTRODUÇÃO</a>
+                    </li>
+                    <li class="tag-h2">
+                        <a href="modulo_cliente.html">MÓDULO CLIENTES</a>
+                        <ul>
+                            <li class="tag-h2">
+                                <a href="tipo_usuario.html">Tipos de Usuário</a>
+                                <a href="usuario_master.html">Usuário "Master"</a>
+                                <a href="usuario_empresa.html">Usuário "Empresa"</a>
+                                <a href="usuario_comprador.html">Usuário "Comprador"</a>
+                            </li>
+                        </ul>
+                        <a href="gerenciamento_fornecedores.html">GERENCIAMENTO DO FORNECEDOR</a>
+                    </li>
+                </ul>
+            </nav>>
+            <section>
+                <h3>
+                    <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usuário "Empresa"</h3>
+                <p>Para acessar a ferramenta com um usuário empresa, é preciso clicar sobre a opção “módulo Clientes” na tela inicial do e-Procurement. No campo Empresa, escolha uma empresa da lista de opções; no campo Usuário, digite o login de um usuário do tipo empresa; e no campo Senha, digite a senha deste usuário. Em seguida, clique botão “entrar”. Observe a figura a seguir:</p>
+                <img src="../../images/eProc/cliente/cliente_figura24.png">
+                <p>Este tipo de usuário tem acesso a todos os módulos da ferramenta. Porém, ele só poderá visualizar informações da empresa a qual ele pertence.</p>
+                <p> Após fazer o login com usuário empresa, a tela “minha área” será apresentada, além das seguintes opções serem disponibilizadas no menu: Consultas, Notas Fiscais, Inf. Financeiras, Diferenças, Leilão, Estatísticas, Canal Aberto, Gerenciamento e Sair, que serão detalhadas a seguir. </p>
+
+                <br>
+                <h3>Menu Consultas</h3>
+                <p>Fornece acesso às consultas de OC (ordem de compra), Cotações e Pedidos.</p>
+                <h3>Consulta de OC</h3>
+                <p>Esta consulta possui diversos filtros que facilitam a pesquisa de OCs. Veja:</p>
+                <img src="../../images/eProc/cliente/cliente_figura25.png">
+                <p>Após informar os valores para os filtros desejados e clicar no botão “consultar”, é exibida uma listagem contendo informações da OC, como: número da OC, descrição do item, número do pedido, quantidade solicitada, nome do comprador, data de emissão e o texto da OC.</p>
+                <img src="../../images/eProc/cliente/cliente_figura26.png" >
+                <p>Observe que existem dois botões no rodapé das informações de cada OC chamados “Assinaturas” e “Cotações que participou”.</p>
+                <p>Ao clicar no botão “Assinaturas”, são exibidas informações das aprovações feitas antes da compra, como: nome, cargo e nível de autoridade de quem autorizou a compra. Isto se faz necessário em casos onde não se pode realizar a compra do item sem prévia autorização.</p>
+                <p>Ao clicar no botão “Cotações que participou”, são exibidas as informações das cotações que continham esta ordem de compra juntamente com as informações do orçamento de cada fornecedor. Veja a figura a seguir:</p>
+                <img src="../../images/eProc/cliente/cliente_figura27.png" >
+                <p>Neste exemplo, existiram duas cotações para este item de dois fornecedores diferentes onde cada fornecedor informou o seu preço, prazo de entrega, condição de pagamento, modo de embarque e a validade da proposta. A linha contendo as informações do fornecedor vencedor fica sempre destacada na cor amarela e com o símbolo.</p>
+                <p>Observe que as informações das colunas Fornecedor, Cotação, Cond. Pgto. e Modo de Embarque ficam sublinhados. Isto significa que é possível clicar sobre elas para obter mais detalhes.</p>
+                <p>Ao clicar sobre o nome do fornecedor, é exibido um detalhamento do mesmo, como mostra a figura a seguir:</p>
+                <img src="../../images/eProc/cliente/cliente_figura28.png" >
+                <p>Ao clicar sobre o número da cotação, são exibidos mais detalhes sobre a mesma, inclusive os demais itens desta cotação. Neste exemplo, serão visualizados os detalhes da cotação 1861, observe:</p>
+                <img src="../../images/eProc/cliente/cliente_figura29.png" >
+                <p>O item destacado na figura acima é o que se refere à ordem de compra de número 5525589 utilizada nos exemplos deste manual. Entretanto, pode-se verificar que, nesta mesma cotação, há outras ordens de compra para este mesmo item.</p>
+                <p>Na figura 29 acima (Detalhamento das cotações do item da OC), é exibido o número do pedido (841006) em que o item do exemplo foi solicitado. Clicando neste número, são exibidos todos os detalhes do pedido em questão, veja:</p>
+                <img src="../../images/eProc/cliente/cliente_figura30.png" >
+                <p>Para imprimir este pedido, basta clicar na imagem que fica no topo da tela.</p>
+
+                <br>
+                <h3>Transferência de ordem de compra</h3>
+                <p>A partir da versão 341.1.1 é possível fazer a transferência de ordem de compra, para isso faça a busca para que a cotação desejada apareça na listagem de cotações conforme a imagem abaixo.</p>
+                <img src="../../images/eProc/cliente/cliente_figura31.png" >
+                <p>Após efetuar a consulta, clique no botão “Transferir OC”, para que a modal de transferência apareça conforme a imagem abaixo.</p>
+                <img src="../../images/eProc/cliente/cliente_figura32.png" >
+                <p>Para efetuar a transferência, selecione o novo comprador na caixa de seleção e clique em gravar.</p>
+
+                <br>
+                <h3>Consulta de Cotações</h3>
+                <p>Esta consulta também oferece vários tipos de filtros que facilitam a pesquisa de cotações.</p>
+                <img src="../../images/eProc/cliente/cliente_figura33.png" >
+                <p>Após clicar no botão “consultar”, é exibida a listagem de cotações conforme mostra a figura a seguir:</p>
+                <img src="../../images/eProc/cliente/cliente_figura34.png" >
+                <p>Observe que existe uma coluna no canto esquerdo da listagem que exibe um símbolo que informa a situação de cada cotação. Existe uma legenda para estes símbolos que pode ser acessada clicando no link “Legenda” localizado no canto superior direito da tela de Consulta de Cotações (figura 34) e da tela de Listagem de Cotações. </p>
+                <img src="../../images/eProc/cliente/cliente_figura35.png" >
+                <p><storng>• Cotação “Sem nenhum item respondido”:</storng> é quando nenhuma das OCs desta cotação foi respondida.</p>
+                <p><strong>• Cotação “Respondida parcialmente”:</strong> é quando apenas algumas OCs foram respondidas, restando algumas sem respostas.</p>
+                <p><strong>• Cotação “Respondida totalmente”:</strong> é quando todas as OCs foram respondidas.</p>
+                <p><strong>• Cotação “Finalizada”:</strong> é quando todas as OCs foram respondidas e já foi designado um fornecedor vencedor para a cotação.</p>
+                <p><strong>• Cotação “Vencida”:</strong> é quando a data limite da resposta é superior a data atual (não considera a quantidade de OCs respondidas).</p>
+                <p><strong>• Cotação “Suspensa”:</strong> é quando o usuário alterou a situação da OC para suspensa.</p>
+                <p>A partir da versão 341.1.5 o status da cotação é alterado ao gerar uma nova rodada, e passa ao seu estado inicial novamente, sendo assim as cotações voltarão ao status ‘Sem nenhum item respondido’ caso o novo round seja gerado e os fornecedores ainda não tenham respondido nenhuma ordem de compra.</p>
+                <p>É possível visualizar detalhes de cada cotação listada. Basta clicar no botão “+” que fica na coluna Opções da listagem (veja a figura 29). Estes detalhes são informações do tipo: nome do fornecedor; quantidade de itens em aberto, respondidos e finalizados; datas e quantidades de e-mails de cobrança enviados, dentre outras.</p>
+                <p>Ainda na figura 30 podemos observar o acesso ao painel de análise da cotação que é o ícone na coluna ‘opções’, conforme imagem:</p>
+                <img src="../../images/eProc/cliente/cliente_figura36.png" >
+
+                <br>
+                <h3>Alteração de Cotação</h3>
+                <br>
+                <h3>Adicionar ordem de compra</h3>
+                <p>A partir da versão 341.1.5, após a criação de uma cotação é possível que o comprador adicione uma ordem de compra ou um fornecedor dentro da cotação.</p>
+                <p>Para isso ao buscar uma cotação o comprador deve clicar no ícone para alterar a cotação conforme a imagem abaixo.</p>
+                <img src="../../images/eProc/cliente/cliente_figura37.png" >
+                <p>Com isso aparecerá a tela para alteração de cotação conforme a imagem abaixo.</p>
+                <img src="../../images/eProc/cliente/cliente_figura38.png" >
+                <p> Para que uma OC seja inserida na cotação clicar no botão “Adicionar OC”, para que a modal de busca de ordens de compra apareça  conforme a imagem abaixo.</p>
+                <img src="../../images/eProc/cliente/cliente_figura39.png" >
+                <p>Após efetuar a buscar com as informações da ordem de compra, será listada as OCs correspondentes, dessa forma selecione as OCs desejadas e clique em gravar para que elas apareçam na listagem de OCs na tela de alteração de cotação, após isso as OCs serão inseridas dentro da cotação.</p>
+
+                <br>
+                <h3>Adicionar fornecedor</h3>
+                <p>Para adicionar um fornecedor seguir os passos da adição de cotação até chegar na tela de alteração de cotação, após isso clicar no botão “Adicionar fornecedor”, com isso aparecerá a modal para busca de fornecedores conforme a imagem abaixo.</p>
+                <img src="../../images/eProc/cliente/cliente_figura40.png" >
+                <p>Após efetuar a busca, será listado os fornecedores correspondentes a pesquisa, após isso clique no fornecedor desejado para que ele apareça na listagem de fornecedores da tela de alteração de cotação, após isso o fornecedor terá sido incluído com sucesso.</p>
+
+                <br>
+                <h3>Chat de cotação</h3>
+                <p>A partir da versão 341.1.0 é possível enviar perguntas para os fornecedores através das cotações para que não seja necessário enviar a pergunta por ordem de compra.</p>
+                <p>Para fazer o envio da mensagem, clique no ícone do chat conforme mostra a imagem abaixo.</p>
+                <img src="../../images/eProc/cliente/cliente_figura41.png" >
+                <p>Após clicar no ícone do chat, a tela para envio será exibida conforme a imagem abaixo.</p>
+                <img src="../../images/eProc/cliente/cliente_figura42.png" >
+                <p>Após digitar a mensagem, ao clicar no botão enviar, o destinatário receberá a mensagem e o registro aparecerá no histórico de mensagens que esta localizado abaixo do botão enviar.</p>
+
+                <br>
+                <h3>Consulta de Pedidos</h3>
+                <p>A consulta de pedidos possui os seguintes filtros:</p>
+                <img src="../../images/eProc/cliente/cliente_figura43.png" >
+                <p>Após preencher os filtros da pesquisa conforme a sua necessidade e clicar no botão “consultar”, será exibida uma listagem constando todos os pedidos que se encaixam nestes filtros. Para efeito demonstrativo, foi utilizado o número do pedido como filtro, observe:</p>
+                <img src="../../images/eProc/cliente/cliente_figura44.png" >
+                <p>Na listagem exibida acima, existem os campos e opções:</p>
+                <p><strong>• Número do pedido;</strong></p>
+                <p><strong>• Data:</strong> data de emissão do pedido;</p>
+                <p><storng>• Situação do pedido: </storng></p>
+                <p><strong>o Aberto:</strong> pedido ainda não realizado e que pode ser alterado;</p>
+                <p><strong>o Atrasado:</strong> pedido cujos itens estão com programação de entrega em vigor e a data de entrega é inferior à data atual;</p>
+                <p><strong>o Cancelado;</strong></p>
+                <p><strong>o Liquidado:</strong> pedido com todos os itens entregues pelo fornecedor.</p>
+                <p><strong>o Realizado:</strong> pedido já realizado que não permite alteração; se for necessário alterá-lo, será preciso criar uma nova versão do mesmo;</p>
+                <p><strong>• Confirmação:</strong></p>
+                <p><strong>o Aguardando:</strong> pedido aguardando confirmação do fornecedor;</p>
+                <p><strong>o Confirmado:</strong> pedido confirmado pelo fornecedor;</strong></p>
+                <p><strong>• Data da confirmação ou do cancelamento;</strong></p>
+                <p><strong>• Preço total final;</strong></p>
+                <p><strong>• Nome do fornecedor;</strong></p>
+                <p><strong>• Opções:</strong></p>
+                <p><strong>o Envio de e-mail de cobrança do pedido:</strong> ao clicar no envelope é exibida a tela a seguir:</p>
+                <img src="../../images/eProc/cliente/cliente_figura45.png" >
+                <p>Nesta tela, é possível redigir um e-mail de cobrança do pedido para ser enviado ao fornecedor;</p>
+                <p><strong>o Exibir/ocultar os detalhes do pedido:</strong> ao clicar no “+” e “-”, são exibidos ou ocultados os detalhes do pedido; estes detalhes mostram a razão social do fornecedor, o nome do comprador, as datas do primeiro e último envio de e-mail de cobrança e a quantidade de e-mails enviados (observe a figura 32 acima). </p>
+                <p>Na listagem de pedidos é possível clicar sobre os pedidos listados para visualizar os detalhes dos mesmos. A tela exibida quando se clica sobre um pedido, é a mesma tela da figura 27 deste manual.</p>
+
+                <br>
+                <h3>Menu Informações Financeiras</h3>
+                <p>Fornece acesso à consulta de Informações Financeiras e possui os seguintes filtros:</p>
+                <img src="../../images/eProc/cliente/cliente_figura46.png" >
+                <p>Após clicar no botão “consultar”, é exibida a listagem a seguir:</p>
+                <img src="../../images/eProc/cliente/cliente_figura47.png" >
+                <p>Para exibir e ocultar as parcelas referentes a uma nota fiscal, basta clicar nos botões “+” e “-”.</p>
+                <p>Clicando sobre qualquer registro da listagem, é possível visualizar mais detalhes de cada parcela, veja:</p>
+                <img src="../../images/eProc/cliente/cliente_figura48.png" >
+                <p>Observe que, no topo da tela do lado esquerdo, existe um botão chamado “Parcela 1”. A quantidade de botões exibida neste local é igual à quantidade de parcelas da compra. Para visualizar os detalhes de cada parcela, basta clicar sobre seu respectivo botão.</p>
+
+                <br>
+                <h3>Menu Relatórios</h3>
+                <p>Nesse item do menu é possível visualizar os seguintes relatórios, baseados em seus respectivos filtros:</p>
+                <p><strong>• Pedidos no período:</strong> relatório de pedidos no qual para filtro é obrigado o preenchimento, ao menos, do período.</p>
+                <p>Filtro:</p>
+                <img src="../../images/eProc/cliente/cliente_figura49.png" >
+                <p>Relatório:</p>
+                <img src="../../images/eProc/cliente/cliente_figura50.png" >
+                <p><strong>• Ordens de compra:</strong> retorna as ordens de compra efetuadas em determinado período (filtro obrigatório).</p>
+                <p>Filtro:</p>
+                <img src="../../images/eProc/cliente/cliente_figura51.png" >
+                <p>Relatório:</p>
+                <img src="../../images/eProc/cliente/cliente_figura52.png" >
+
+                <br>
+                <h3>Menu Canal Aberto</h3>
+                <p>Este módulo deve ser utilizado para troca de mensagens entre a empresa e os fornecedores. Para enviar uma mensagem a um fornecedor, basta clicar no botão “incluir” da tela exibida após clicar no menu Canal Aberto. Após isto, será exibida a tela para você cadastrar a mensagem, como mostra a figura a seguir:</p>
+                <img src="../../images/eProc/cliente/cliente_figura53.png" >
+                <p>Para enviar a mensagem, basta preencher os campos e clicar no botão “enviar”. Isto fará com que esta mensagem fique disponível (seja exibida) no Canal Aberto do fornecedor destinatário da mensagem. Sendo assim, o fornecedor poderá responder ou não a mensagem recebida.</p>
+                <p>Este módulo é muito útil para se estabelecer um contato direto com o fornecedor por meio de mensagens.</p>
+
+                <br>
+                <h3>Menu Gerenciamento</h3>
+                <img src="../../images/eProc/cliente/cliente_figura54.png" >
+
+                <br>
+                <h3>Empresas</h3>
+                <p>Este recurso permite a configuração da empresa do usuário logado. Por meio desta tela é possível configurar, por exemplo, os usuários e suas respectivas senhas para acesso à ferramenta, o logotipo da empresa, o e-mail do responsável pela empresa no e-Procurement, etc. Esta tela é a mesma explicada no tópico “Manutenção – Empresas” deste manual (tópico 2.2.1, página 4).</p>
+
+                <br>
+                <h3>Itens</h3>
+                <p>Consulta dos itens importados do ERP. </p>
+                <img src="../../images/eProc/cliente/cliente_figura55.ppng" >
+                <p>Após preencher um ou mais campos de filtro e clicar no botão “consultar”, é exibida a listagem dos itens que se encaixam no filtro contendo as colunas: Empresa (código da empresa), Código e Descrição do item.</p>
+
+                <br>
+                <h3>Compradores</h3>
+                <p>Neste módulo é possível sincronizar os compradores, ou seja, trazer todos os novos compradores cadastrados no ERP para o e-Procurement. Para fazer isto, basta clicar no botão “sincronizar” da tela exibida na imagem a seguir:</p>
+                <img src="../../images/eProc/cliente/cliente_figura56.png" >
+                <p>Para consultar compradores, basta preencher ou não os filtros de acordo com a necessidade e clicar no botão “consultar”. Após isto, será exibida uma lista com todos os compradores onde será possível ativar e desativar os mesmo. Um comprador ativo tem acesso à ferramenta e um comprador inativo não tem acesso à ferramenta.</p>
+                <img src="../../images/eProc/cliente/cliente_figura57.png" >
+
+                <br>
+                <h3>Programadores</h3>
+                <p> Por meio deste módulo é possível sincronizar os programadores, ou seja, trazer todos os novos programadores cadastrados no ERP para o e-Procurement.</p>
+                <p>Este módulo tem as mesmas funcionalidades do módulo “Compradores”. Sendo assim, os funcionamentos da consulta, alteração e sincronismo são os mesmos.</p>
+
+                <br>
+                <h3>Fornecedores</h3>
+                <p>Por meio deste módulo é possível sincronizar os fornecedores, ou seja, trazer todos os novos fornecedores cadastrados no ERP para o e-Procurement. </p>
+                <p>Este módulo tem as mesmas funcionalidades do módulo “Compradores”. Sendo assim, os funcionamentos da consulta, alteração e sincronismo são os mesmos.</p>
+
+                <br>
+                <h3>Relatório Adesão</h3>
+                <p>A adesão é uma taxa cobrada do fornecedor para que ele possa usar a ferramenta e usufruir dos recursos nela oferecidos.</p>
+                <p>Por meio deste módulo é possível consultar a situação de cada fornecedor filtrando por: todos os fornecedores, fornecedores que geraram o boleto, mas não efetuaram o pagamento e fornecedores que ainda não geraram o boleto.</p>
+                <img src="../../images/eProc/cliente/cliente_figura58.png">
+                <p>Após preencher os filtros da consulta, basta clicar no botão “consultar” para visualizar a listagem a seguir:</p>
+                <img src="../../images/eProc/cliente/cliente_figura59.png" >
+                <p>Cada fornecedor por ou não pagar uma taxa de adesão para utilizar a ferramenta. Esta taxa é calculada com base no faturamento do fornecedor dos últimos doze meses com a empresa em questão (observe o campo “Valor” da figura acima) e ela precisa ser renovada a cada ano (campo “Data da Renovação”).</p>
+
+                <br>
+                <h3>Condição de Pagamento por Fornecedor</h3>
+                <p>Por meio deste módulo é possível habilitar e desabilitar as condições de pagamento importadas do ERP para cada fornecedor. Basta escolher o fornecedor na tela da figura a seguir e clicar no botão “consultar”. Veja:</p>
+                <img src="../../images/eProc/cliente/cliente_figura60.png" >
+                <p>Após isto, será exibida uma listagem contendo todas as condições de pagamento. As condições de pagamento que estiverem ativadas/marcadas (coluna lateral esquerda da listagem) serão as que ficarão disponíveis na ferramenta para este fornecedor. Observe:</p>
+                <img src="../../images/eProc/cliente/cliente_figura61.png" >
+
+                <br>
+                <h3>Condição de Pagamento de Fornecedor para Fornecedor</h3>
+                <p>A função deste módulo é copiar condições de pagamento de um fornecedor para outro e também transferir a situação (habilitada / desabilitada) das condições de pagamento de um fornecedor para outro. Para realizar esta operação, basta escolher o fornecedor de origem, o fornecedor destino e clicar em “gravar”.</p>
+                <img src="../../images/eProc/cliente/cliente_figura62.png" >
+
+                <br>
+                <h3>Condição de Pagamento para todos Fornecedores</h3>
+                <p>A função deste módulo é incluir e remover condições de pagamento de todos os fornecedores. Para fazer isto, basta escolher a condição de pagamento desejada, selecionar umas das opções: “Incluir a todos” e “Remover de todos” e clicar em “gravar”.</p>
+                <img src="../../images/eProc/cliente/cliente_figura63.png" >
+
+                <br>
+                <h3>Upload</h3>
+                <p>Este módulo já foi descrito anteriormente no tópico “Manutenção – Upload” localizado na página 9 deste manual.</p>
+
+                <br>
+                <h3>Log</h3>
+                <p>Este módulo já foi descrito anteriormente no tópico “Manutenção – Log”.</p>
+        </section>
+            <footer>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+            </footer>
+        </div>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    </body>
+</html>

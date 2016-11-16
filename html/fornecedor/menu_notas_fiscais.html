@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Manual do Fornecedor - eProcurement</title>
+        <link rel="stylesheet" href="../../stylesheets/styles.css">
+        <link rel="stylesheet" href="../../stylesheets/github-dark.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="../../javascripts/main.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    </head>
+    <body>
+
+        <header>
+            <h1>eProcurement</h1>
+            <p>Documentação do Fornecedor - eProcurement</p>
+        </header>
+
+        <div id="banner">
+            <span id="logo"></span>
+
+            <a href="../../index.html" class="button"><strong>Página Inicial</strong></a>
+
+            <div class="downloads">
+                <span>Downloads:</span>
+                <ul>
+                    <li><a href="https://github.com/eprocurement-lecom/eprocurement-lecom.github.io/releases/download/v4/Manual_eProcurement_v4-Fornecedores.pdf" class="button">Fornecedores</a></li>
+                </ul>
+            </div>
+        </div><!-- end banner -->
+
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li class="tag-h2">
+                        <a href="introducao.html">INTRODUÇÃO</a>
+                    </li>
+                    <li class="tag-h2">
+                        <a href="modulo_fornecedor.html">MÓDULO FORNECEDORES</a>
+                        <ul>
+                            <li class="tag-h2">
+                                <a href="menu_consultas.html">Menu Consultas</a><br>
+                                <a href="menu_notas_fiscais.html">Menu Notas Fiscais</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <h3>
+                    <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Menu Notas Fiscais</h3>
+                <p>Este módulo permite o cadastro e consulta de notas fiscais e o envio das mesmas para os clientes. </p>
+                <p>Conforme foi demonstrado no tópico anterior, uma nota fiscal pode ser gerada automaticamente após a confirmação de um pedido. Porém, mesmo sendo gerada automaticamente, é preciso terminar de preenchêla. Para fazer isto, bastar clicar no botão “Consulta” para que todas as notas fiscais que ainda não foram enviadas para seus respectivos clientes sejam listadas. Em seguida, encontre o CNPJ do cliente da nota fiscal e clique sobre o registro correspondente. Fazendo isto, aparecerá a seguinte tela:</p>
+                <img src="../../images/eProc/fornecedor/fornec_figura10.png">
+                <p>Inicialmente, só o cabeçalho da nota fiscal é exibido. Para que seus itens fiquem visíveis, é preciso clicar no botão “+” destacado na figura acima. Quando ele é pressionado uma vez, os itens da nota são exibidos e, quando pressionado pela segunda vez, os mesmos são ocultados. </p>
+                <p>Após clicar neste botão, é exibida uma listagem contendo todos os itens da nota fiscal (observe a seta vermelha na figura acima). É importante ressaltar que só aparecerão na nota fiscal os itens que foram selecionados antes de clicar no botão “gerar NF” lá no pedido. </p>
+                <p>Para alterar um item, basta clicar sobre seu código na listagem ou selecioná-lo no campo destacado que fica ao lado do botão “Novo Item”. Para efetivar as alterações feitas no item selecionado, basta clicar no botão “Gravar”. Vale lembrar que é necessário clicar no botão “Gravar” antes de trocar de item, caso contrário, as alterações serão perdidas.</p>
+                <p>Para excluir as informações do item, basta clicar no botão Excluir. </p>
+                <p>Para facilitar o preenchimento das informações de um item, é possível importar tais informações de uma OC. Para fazer isto, basta preencher o campo “Nº OC” com o número da ordem de compra e clicar no botão “Importar”.</p>
+                <p>Depois de preencher o cabeçalho da nota fiscal, também é preciso gravar, ou seja, clicar no botão “Gravar” que fica ao lado do botão “Confirmar” no centro da tela. </p>
+                <p>Também é possível cadastrar uma nota fiscal de remessa. Para isto, basta clicar no botão “Cadastro” no topo da tela, preencher as informações de cabeçalho e clicar no botão “Gravar”. Após isto, o botão “+” para a inclusão de itens ficará habilitado e o processo de inclusão, alteração e exclusão de itens na nota fiscal é igual ao descrito anteriormente neste tópico.</p>
+                <p>Uma nota fiscal só pode ser enviada para o cliente (a este processo dá-se o nome de sincronismo) se ela for confirmada pelo fornecedor. Para fazer isto, basta clicar no botão “Confirmar” após ter feito a gravação da nota fiscal.  </p>
+                <p>Para sincronizar notas fiscais é preciso clicar no botão “Enviar” no topo da tela e, em seguida, no botão “sincronizar”. </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura11.png">
+                <p>Depois de efetuar o sincronismo com sucesso, é preciso aguardar vinte minutos para consultar o retorno da importação. </p>
+                <p>Para fazer esta consulta, basta clicar no botão “Retorno”. Será exibida uma tela de filtro para a consulta do retorno da importação das notas fiscais, conforme mostra a figura a seguir. Preencha-a de acordo com a necessidade e clique no botão “consultar”. </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura12.png">
+                <p>Na listagem exibida na tela, clique sobre a nota fiscal que deseja saber o retorno da importação. </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura13.png">
+
+                <br>
+                <h3>Menu Informações Financeiras</h3>
+                <p>Fornece acesso a consulta de Informações Financeiras e possui os seguintes filtros: </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura14.png">
+                <p>Após preencher os filtros conforme sua necessidade e clicar no botão “consultar”, é exibida a listagem a seguir:</p>
+                <img src="../../images/eProc/fornecedor/fornec_figura15.png">
+                <p>Para exibir e ocultar as parcelas referentes a uma nota fiscal, basta clicar no botão “+” e “-”. </p>
+                <p>Clicando sobre qualquer registro da listagem, pode-se visualizar mais detalhes de cada parcela, veja: </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura16.png">
+                <p>Observe que no topo da tela existe um botão chamado “Parcela 1”. A quantidade de botões exibida neste local é igual à quantidade de parcelas da compra. Para visualizar os detalhes de cada parcela, basta clicar sobre seu respectivo botão. </p>
+
+                <br>
+                <h3>Menu Diferenças</h3>
+                <p>O funcionamento deste menu é igual ao do menu Diferenças descrito no módulo Clientes, na página 12 deste manual. </p>
+                <br>
+                <h3>Menu Leilão</h3>
+                <p>Além da compra pelo melhor preço a empresa poderá utilizar a modalidade de Leilão para algumas ordens de compra. Para que isso ocorra, a empresa deverá indicar quais ordens de compra deverão ser disponibilizadas na modalidade de Leilão. </p>
+                <p>Após a disponibilização da ordem de compra no e-Procurement, o fornecedor terá acesso às informações do produto a ser comprado, poderá saber qual foi o melhor preço oferecido até o momento e inserir sua oferta.</p>
+                <p>Sempre que a melhor oferta para os produtos for superada, o eProcurement enviará um e-mail para o fornecedor que estava liderando a ordem de compra, informando que sua oferta foi superada. </p>
+                <p>Com esse mecanismo, todos os fornecedores participantes de uma cotação poderão alterar suas ofertas até a data limite para o encerramento do processo, independente de sua oferta anterior ter sido considerada a melhor ou não. </p>
+                <p>Após a conclusão do Leilão, a melhor oferta será enviada ao sistema ERP da empresa para a elaboração do pedido de compra. Uma vez elaborado o pedido, o restante do procedimento é o mesmo descrito anteriormente. </p>
+
+                <br>
+                <h3>Menu Canal Aberto</h3>
+                <p>O funcionamento deste menu é igual ao do menu Canal Aberto descrito no módulo Clientes, na página 17 deste manual. </p>
+
+                <br>
+                <h3>Menu Gerenciamento</h3>
+                <img src="../../images/eProc/fornecedor/fornec_figura17.png">
+
+                <br>
+                <h3>Itens</h3>
+                <p>O funcionamento deste menu é igual ao do menu Itens descrito no módulo Clientes. </p>
+
+                <br>
+                <h3>Fornecedores</h3>
+                <p>Este módulo acesso ao cadastro do fornecedor no e-Procurement. Neste módulo o fornecedor pode alterar os seguintes campos: “Login”, “Senha”, “Destacar cotações que vencerão em”, “Idioma que deseja receber os e-mails”, “Exibir listagens com”, “Vendedor principal”, “Servidor de e-mail” e “E-mail do responsável pelo Canal Aberto”. </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura18.png">
+
+                <br>
+                <h3>Vendedores</h3>
+                <p>A função de um vendedor no e-Procurement é responder as cotações. Sendo assim, o fornecedor pode cadastrar vários vendedores e cada um deles pode cuidar de cotações diferentes. </p>
+                <p>Este módulo permite a inclusão, alteração, exclusão e consulta de vendedores. A tela de consulta possui os seguintes filtros: </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura19.png">
+                <p>Após clicar no botão “consultar”, é exibida uma listagem constando todos os vendedores que se encaixam no filtro informado. Clicando sobre um vendedor desta listagem, é aberta a tela de cadastro do vendedor para que ele possa ser alterado ou excluído. </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura20.png">
+                <p>Para incluir um novo vendedor, basta clicar no botão “incluir” localizado na tela de filtros para consulta de vendedores. </p>
+
+                <br>
+                <h3>Vendedores x Cotações</h3>
+                <p>Este módulo serve para vincular e desvincular um vendedor a uma ou mais cotações.</p>
+                <p>Para vincular um vendedor a uma ou mais cotações, basta consultar as cotações sem vendedor vinculado e, na listagem que for exibida, selecionar cada uma das cotações que deseja vincular ao vendedor selecionado no campo Vendedor e clique no botão “gravar”. Observe: </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura21.png">
+                <img src="../../images/eProc/fornecedor/fornec_figura22.png">
+                <p>Para desvincular um vendedor de uma ou mais cotações, basta consultar as cotações filtrando pelo vendedor e, na listagem de cotações, desmarcar as cotações que desejar. </p>
+            </section>
+            <footer>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+            </footer>
+        </div>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    </body>
+</html>

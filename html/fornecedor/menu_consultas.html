@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Manual do Fornecedor - eProcurement</title>
+        <link rel="stylesheet" href="../../stylesheets/styles.css">
+        <link rel="stylesheet" href="../../stylesheets/github-dark.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="../../javascripts/main.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    </head>
+    <body>
+
+        <header>
+            <h1>eProcurement</h1>
+            <p>Documentação do Fornecedor - eProcurement</p>
+        </header>
+
+        <div id="banner">
+            <span id="logo"></span>
+
+            <a href="../../index.html" class="button"><strong>Página Inicial</strong></a>
+
+            <div class="downloads">
+                <span>Downloads:</span>
+                <ul>
+                    <li><a href="https://github.com/eprocurement-lecom/eprocurement-lecom.github.io/releases/download/v4/Manual_eProcurement_v4-Fornecedores.pdf" class="button">Fornecedores</a></li>
+                </ul>
+            </div>
+        </div><!-- end banner -->
+
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li class="tag-h2">
+                        <a href="introducao.html">INTRODUÇÃO</a>
+                    </li>
+                    <li class="tag-h2">
+                        <a href="modulo_fornecedor.html">MÓDULO FORNECEDORES</a>
+                        <ul>
+                            <li class="tag-h2">
+                                <a href="menu_consultas.html">Menu Consultas</a><br>
+                                <a href="menu_notas_fiscais.html">Menu Notas Fiscais</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <h3>
+                    <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Menu Consultas</h3>
+                <p>Este menu fornece acesso às consultas de OC, cotações e pedidos que serão detalhadas a seguir.</p>
+                <br>
+                <h3>Consulta de Cotações</h3>
+                <p>Por meio deste módulo o fornecedor pode consultar as cotações para respondê-las para a empresa que as solicitou. A consulta possui os seguintes filtros: </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura2.png">
+                <p>Após preencher os filtros conforme a necessidade e clicar no botão “consultar”, será exibida a listagem das cotações encontradas. </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura3.png">
+                <p>Para visualizar detalhes da cotação, basta clicar sobre o botão “+”. A figura acima mostra os detalhes da cotação 145. </p>
+                <p>Cada cotação da listagem terá sua situação representada por símbolos (coluna lateral esquerda da listagem) cuja legenda pode ser visualizada após clicar sobre “Legenda” no canto superior direito da tela. </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura4.png">
+                <p>Ao lado do botão “+” (figura 60), há um caminhão que, conforme podemos observar na legenda, representa a programação de entrega dos itens da cotação. Clicando sobre este caminhão, a programação referida é exibida. Esta programação é elaborada pelo responsável pela geração da ordem de compra que já informa em qual data a empresa precisa receber cada item e qual a quantidade desejada de do item para esta data. Observe:</p>
+                <img src="../../images/eProc/fornecedor/fornec_figura5.png">
+                <p>A tela de listagem de cotações (figura 60) tem um filtro adicional que pode ser aplicado sobre os itens da cotação a ser respondida. </p>
+                <p>Para utilizar este filtro, basta preencher um ou mais campos do mesmo e clicar sobre alguma cotação da listagem. Fazendo isto, automaticamente a cotação será exibida e seus itens já serão exibidos de acordo com o que foi preenchido nos filtros. </p>
+                <p>Após clicar sobre qualquer cotação que se queira responder, será exibida a tela a seguir: </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura6.png">
+                <p>Observe que existem cinco botões logo abaixo do item da cotação: Cond. Comerciais (Condições Comerciais), Just. (Justificativa), Entrega, Chat e ISO. </p>
+                <p>Ao lado do botão “Cond. Comerciais” (destacado em laranja), existem um botão “X” que serve para fechar os detalhes exibidos quando os botões Cond. Comerciais, Just., Entrega, Chat e ISO são pressionados.</p>
+
+                <br>
+                <h3>Condições Comerciais</h3>
+                <p>Para responder uma cotação, o fornecedor deve preencher as condições comerciais da cotação e, para isto, é preciso clicar no botão “Cond. Comerciais”.</p>
+                <p>Uma cotação pode conter vários itens e, sendo assim, existe um recurso que facilita o preenchimento das condições comerciais, ou seja, o valor de um campo pode ser digitado apenas uma vez e replicado para todos os itens. Observando a figura acima, antes da listagem “Itens da Cotação” existe uma área com campos como IPI, ICMS, Prazo de entrega, dentre outros; preenchendo qualquer um destes campos e clicando sobre o botão “Copiar dados do cabeçalho” que fica próximo ao botão “voltar”, os valores digitados nos campos desta área citada são copiados para seus respectivos campos na área de condições comerciais. </p>
+                <p>O botão “Gravar” que fica próximo ao botão “voltar”, serve para gravar as informações digitadas nas condições comerciais. Uma vez gravadas, estas informações já vão direto para banco de dados do ERP da empresa (cliente) em forma de resposta para a cotação.</p>
+                <p>O botão “Excluir” que fica ao lado do botão “Gravar”, serve para excluir e limpar todos os campos das condições comerciais. Isto faz com que as informações da condição comercial da cotação sejam perdidas e elas também serão removidas do banco de dados do ERP da empresa (cliente), ou seja, se antes a cotação tinha uma resposta do fornecedor, após clicar neste botão, ela não terá mais. </p>
+
+                <br>
+                <h3>Justificativa</h3>
+                <p>Ao clicar no botão “Just.” ao lado do botão “Cond. Comerciais”, é exibido um campo para que o fornecedor digite uma justificativa para o não fornecimento do item. Esta justificativa pode ter 250 caracteres. </p>
+                <p>Após preencher a justificativa, basta clicar no botão “Gravar” para que a empresa (cliente) receba esta justificativa. </p>
+                <br>
+                <h3>Entrega</h3>
+                <p>Ao clicar no botão “Entrega” ao lado do botão “Just.”, é exibida a programação de entrega do item (data e quantidade) solicitada pela empresa (cliente) e que o fornecedor deverá obedecer.</p>
+                <br>
+                <h3>Chat</h3>
+                <p>Ao clicar no botão “Chat” ao lado do botão “Entrega”, é exibido um campo para o fornecedor digitar sua dúvida, sugestão ou resposta para a empresa (cliente). Após digitar a mensagem, basta clicar no botão “Enviar” para que a mensagem seja enviada para a empresa (cliente). Nesta área também é exibido um histórico das mensagens trocadas entre fornecedor e empresa (cliente). </p>
+                <br>
+                <h3>ISO</h3>
+                <p>Ao clicar no botão “ISO” ao lado do botão “Chat”, é exibida a norma ISO do item, se existir alguma norma cadastrada para este item no ERP da empresa (cliente). </p>
+                <br>
+                <h3>Consulta de Pedidos</h3>
+                <p>Depois que o fornecedor responde a cotação, a empresa (cliente) designa um fornecedor vencedor para a cotação e gera um pedido dos itens desta cotação para o fornecedor vencedor. Esta consulta serve para que cada fornecedor pesquise os pedidos gerados para ele e faça a confirmação ou cancelamento do mesmo. Ao confirmar um pedido, o fornecedor estará dizendo para seu cliente que ele fará a entrega do mesmo.</p>
+                <p>Esta consulta possui os seguintes filtros: </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura7.png">
+                <p>Após preencher ou não o filtro da consulta e clicar no botão “consultar”, é exibida uma listagem dos pedidos que se encaixam no filtro utilizado contendo os campos Número, data e situação do pedido, confirmação e valor. Também são exibidos os botões “+” e “-” para exibir e ocultar os detalhes do pedido. Esses detalhes são: o nome da empresa (cliente), o nome do comprador responsável pelo pedido no cliente, e informações sobre envio de emails de cobrança. Observe:</p>
+                <img src="../../images/eProc/fornecedor/fornec_figura8.png">
+                <p>O campo <strong>Situação do pedido</strong> pode ser: </p>
+                <p><strong>Atrasado:</strong> pedido cujos itens estão com programação de entrega em vigor e a data de entrega é inferior à data atual; </p>
+                <p><strong>Cancelado;</strong></p>
+                <p><strong>Liquidado:</strong> pedido com todos os itens entregues pelo fornecedor. </p>
+                <p><strong>Realizado:</strong> pedido já realizado que não permite alteração; se for necessário alterá-lo, será preciso criar uma nova versão do mesmo; </p>
+
+                <br>
+                <p>O campo <strong>Confirmação</strong> pode ser</p>
+                <p><strong>Aguardando:</strong> pedido aguardando confirmação do fornecedor; </p>
+                <p><strong>Confirmado:</strong> pedido confirmado pelo fornecedor; </p>
+                <p><strong>Cancelado:</strong> pedido cancelado pelo fornecedor, o que significa que ele não entregará os produtos do pedido. </p>
+
+                <p>Para fazer a confirmação de um pedido, basta clicar sobre ele na listagem de pedidos (após consultar) e, na tela que aparecer, selecionar a opção “Confirmado” no campo Aprovação e clicar no botão “Gravar” que fica no rodapé da tela, conforme mostra a figura a seguir: </p>
+                <img src="../../images/eProc/fornecedor/fornec_figura9.png">
+                <p>Após gravar o pedido, é exibida uma mensagem dizendo que o pedido foi gravado com sucesso. Sendo assim, agora é possível gerar a nota fiscal do pedido.</p>
+                <p>Para gerar a nota fiscal, basta consultar novamente o pedido, clicar sobre ele na listagem para que a tela de detalhes do pedido (figura acima) seja exibida. Após isto, selecione os itens para os quais se deseja gerar a nota fiscal (clique sobre a caixa de seleção destacada em verde na figura acima) e clique no botão “gerar NF”. </p>
+                <p>Depois que a nota fiscal do pedido foi gerada, ela precisa ser preenchida. Este preenchimento é feito no módulo “Notas Fiscais” que será explicado a seguir. É importante ressaltar que o lançamento da nota fiscal deve ser realizado após o faturamento do pedido (emissão da nota fiscal física). </p>
+                <p>Um pedido pode ser cancelado apenas se este ainda não foi confirmado, ou seja, apenas se o campo “Confirmação” deste pedido estiver como “Aguardando”. Para realizar este procedimento, basta consultar o pedido em questão, clicar sobre ele na listagem exibida e, no campo “Aprovação” da tela que aparecer (este campo fica lá no final da tela, perto dos botões), selecione a opção “Cancelado” e clique no botão “gravar”.</p>
+                <p>Fazendo isto, o pedido estará cancelado e o cliente saberá que a entrega dos produtos solicitados no pedido não serão entregues.</p>
+            </section>
+            <footer>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+            </footer>
+        </div>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    </body>
+</html>
