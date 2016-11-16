@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Manual do Cliente - eProcurement</title>
+        <link rel="stylesheet" href="../../../../stylesheets/styles.css">
+        <link rel="stylesheet" href="../../../../stylesheets/github-dark.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../../../../javascripts/main.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    </head>
+    <body>
+
+        <header>
+            <h1>eProcurement</h1>
+            <p>Documentação do Cliente - eProcurement</p>
+        </header>
+
+        <div id="banner">
+            <span id="logo"></span>
+
+            <a href="../../../../index.html" class="button"><strong>Página Inicial</strong></a>
+
+            <div class="downloads">
+                <span>Downloads:</span>
+                <ul>
+                    <li><a href="https://github.com/eprocurement-lecom/eprocurement-lecom.github.io/releases/download/v4/Manual_eProcurement_v4-Clientes.pdf" class="button">Clientes</a></li>
+                </ul>
+            </div>
+        </div><!-- end banner -->
+
+        <div class="wrapper">
+            <nav>
+            </nav>
+            <section>
+                <h3>
+                    <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Menu Gerenciamento</h3>
+                <img src="../../../../images/eProc/cliente/cliente_figura54.png" >
+
+                <br>
+                <h3>Empresas</h3>
+                <p>Este recurso permite a configuração da empresa do usuário logado. Por meio desta tela é possível configurar, por exemplo, os usuários e suas respectivas senhas para acesso à ferramenta, o logotipo da empresa, o e-mail do responsável pela empresa no e-Procurement, etc. Esta tela é a mesma explicada no tópico “Manutenção – Empresas” deste manual (tópico 2.2.1, página 4).</p>
+
+                <h3>Itens</h3>
+                <p>Consulta dos itens importados do ERP. </p>
+                <img src="../../../../images/eProc/cliente/cliente_figura55.ppng" >
+                <p>Após preencher um ou mais campos de filtro e clicar no botão “consultar”, é exibida a listagem dos itens que se encaixam no filtro contendo as colunas: Empresa (código da empresa), Código e Descrição do item.</p>
+
+                <br>
+                <h3>Compradores</h3>
+                <p>Neste módulo é possível sincronizar os compradores, ou seja, trazer todos os novos compradores cadastrados no ERP para o e-Procurement. Para fazer isto, basta clicar no botão “sincronizar” da tela exibida na imagem a seguir:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura56.png" >
+                <p>Para consultar compradores, basta preencher ou não os filtros de acordo com a necessidade e clicar no botão “consultar”. Após isto, será exibida uma lista com todos os compradores onde será possível ativar e desativar os mesmo. Um comprador ativo tem acesso à ferramenta e um comprador inativo não tem acesso à ferramenta.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura57.png" >
+
+                <br>
+                <h3>Programadores</h3>
+                <p> Por meio deste módulo é possível sincronizar os programadores, ou seja, trazer todos os novos programadores cadastrados no ERP para o e-Procurement.</p>
+                <p>Este módulo tem as mesmas funcionalidades do módulo “Compradores”. Sendo assim, os funcionamentos da consulta, alteração e sincronismo são os mesmos.</p>
+
+                <br>
+                <h3>Fornecedores</h3>
+                <p>Por meio deste módulo é possível sincronizar os fornecedores, ou seja, trazer todos os novos fornecedores cadastrados no ERP para o e-Procurement. </p>
+                <p>Este módulo tem as mesmas funcionalidades do módulo “Compradores”. Sendo assim, os funcionamentos da consulta, alteração e sincronismo são os mesmos.</p>
+
+                <br>
+                <h3>Relatório Adesão</h3>
+                <p>A adesão é uma taxa cobrada do fornecedor para que ele possa usar a ferramenta e usufruir dos recursos nela oferecidos.</p>
+                <p>Por meio deste módulo é possível consultar a situação de cada fornecedor filtrando por: todos os fornecedores, fornecedores que geraram o boleto, mas não efetuaram o pagamento e fornecedores que ainda não geraram o boleto.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura58.png">
+                <p>Após preencher os filtros da consulta, basta clicar no botão “consultar” para visualizar a listagem a seguir:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura59.png" >
+                <p>Cada fornecedor por ou não pagar uma taxa de adesão para utilizar a ferramenta. Esta taxa é calculada com base no faturamento do fornecedor dos últimos doze meses com a empresa em questão (observe o campo “Valor” da figura acima) e ela precisa ser renovada a cada ano (campo “Data da Renovação”).</p>
+
+                <br>
+                <h3>Condição de Pagamento por Fornecedor</h3>
+                <p>Por meio deste módulo é possível habilitar e desabilitar as condições de pagamento importadas do ERP para cada fornecedor. Basta escolher o fornecedor na tela da figura a seguir e clicar no botão “consultar”. Veja:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura60.png" >
+                <p>Após isto, será exibida uma listagem contendo todas as condições de pagamento. As condições de pagamento que estiverem ativadas/marcadas (coluna lateral esquerda da listagem) serão as que ficarão disponíveis na ferramenta para este fornecedor. Observe:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura61.png" >
+
+                <br>
+                <h3>Condição de Pagamento de Fornecedor para Fornecedor</h3>
+                <p>A função deste módulo é copiar condições de pagamento de um fornecedor para outro e também transferir a situação (habilitada / desabilitada) das condições de pagamento de um fornecedor para outro. Para realizar esta operação, basta escolher o fornecedor de origem, o fornecedor destino e clicar em “gravar”.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura62.png" >
+
+                <br>
+                <h3>Condição de Pagamento para todos Fornecedores</h3>
+                <p>A função deste módulo é incluir e remover condições de pagamento de todos os fornecedores. Para fazer isto, basta escolher a condição de pagamento desejada, selecionar umas das opções: “Incluir a todos” e “Remover de todos” e clicar em “gravar”.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura63.png" >
+
+                <br>
+                <h3>Upload</h3>
+                <p>Este módulo já foi descrito anteriormente no tópico “Manutenção – Upload” localizado na página 9 deste manual.</p>
+
+                <br>
+                <h3>Log</h3>
+                <p>Este módulo já foi descrito anteriormente no tópico “Manutenção – Log”.</p>
+
+                <button type="button" href="../Comprador/usuario_comprador.html" class="btn btn-warning" >Próxima Página</button>
+          </section>
+            <footer>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+            </footer>
+        </div>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    </body>
+</html>

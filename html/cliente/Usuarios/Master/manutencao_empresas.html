@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Manual do Cliente - eProcurement</title>
+        <link rel="stylesheet" href="../../../../stylesheets/styles.css">
+        <link rel="stylesheet" href="../../../../stylesheets/github-dark.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../../../../javascripts/main.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    </head>
+    <body>
+
+        <header>
+            <h1>eProcurement</h1>
+            <p>Documentação do Cliente - eProcurement</p>
+        </header>
+
+        <div id="banner">
+            <span id="logo"></span>
+
+            <a href="../../../../index.html" class="button"><strong>Página Inicial</strong></a>
+
+            <div class="downloads">
+                <span>Downloads:</span>
+                <ul>
+                    <li><a href="https://github.com/eprocurement-lecom/eprocurement-lecom.github.io/releases/download/v4/Manual_eProcurement_v4-Clientes.pdf" class="button">Clientes</a></li>
+                </ul>
+            </div>
+        </div><!-- end banner -->
+
+        <div class="wrapper">
+            <nav>
+            </nav>
+            <section>
+                <h3>
+                    <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Manutenção - Empresas</h3>
+                <img src="../../../../images/eProc/cliente/manutencao-empresas-texto.png">
+                <p>Este recurso permite a configuração de todas as empresas existentes no banco de dados, basta selecionar a empresa desejada no campo Empresa. Por meio desta tela é possível configurar, por exemplo, os usuários e suas respectivas senhas para acesso à ferramenta, o logotipo da empresa, o e-mail do responsável pela empresa no e-Procurement, etc.</p>
+
+                <img src="../../../../images/eProc/cliente/cliente_figura6.png">
+
+                <p><strong>Destacar cotações que vencerão em X dias:</strong> na listagem de cotações (módulo clientes), as cotações que vencerão daqui a X dias (neste exemplo, 10 dias) serão destacadas com a cor amarela.
+                </p>
+                <p><strong>Não permitir responder cotações X dias da data de encerramento:</strong> após o número de dias determinado, levando em consideração como data de início a data do encerramento </p>
+                <p><strong>Avisar o fornecedor da entrega a partir de X dias da data de encerramento:</strong> a rotina de envio de e-mails enviará um e-mail para o fornecedor avisando a data da entrega do pedido com X dias de antecedência.</p>
+                <p><strong>Avisar fornecedor a cada X dias. </strong></p>
+                <p><strong>Servidor de email:</strong> endereço do servidor de email que será utilizado para envio de emails no sistema. </p>
+                <p><strong>Email do responsável pela empresa no eProcurement:</strong> email utilizado como remetente no envio de algumas notificações do sistema. </p>
+                <p><strong>Email do responsável pelo Pré Cadastro de Fornecedores:</strong> email que aparece para o fornecedor ao concluir o pré-cadastro no eProcurement. </p>
+                <p><strong>Empresa padrão para Pré Cadastro de Fornecedores:</strong> empresa padrão utilizada no pré-cadastro do fornecedor.</p>
+                <p><strong>Autenticação de email:</strong> define se o servidor de e-mail exige autenticação do usuário. Se estiver "sim", o sistema fará a autenticação. </p>
+                <p><strong>Usuário:</strong> usuário para autenticação no servidor de email.</p>
+                <p><strong>Senha:</strong> senha para autenticação no servidor de email.</p>
+                <p><strong>Endereço WEB da aplicação:</strong> endereço de acesso ao eProcuremente. Utilizado nos emails para colocar o link de acesso ao eProcurement.</p>
+                <p><strong>Imagem do Logotipo:</strong> imagem que será exibida na página de login da ferramenta.</p>
+                <p><strong>Área de FTP:</strong> se houver integração de Notas com o Logix (COM0019 ou SUP0552), deve ser configurado o FTP. O eProcurement grava neste FTP os arquivos das NFs que o Logix vai importar.</p>
+                <p><strong>Condição de pagamento para NF de remessa:</strong> esta é a condição de pagamento padrão que será utilizada quando o fornecedor for gerar uma nota fiscal de remessa. </p>
+                <p><strong>Usuário:</strong> usuário para autenticação na área de FTP. </p>
+                <p><strong>Senha:</strong> senha para autenticação na área de FTP.</p>
+                <p><strong>Condição de Pagamento para NF de Remessa:</strong> campo utilizado na digitação da Nota Fiscal. Se a NF que está sendo digitada for uma nota fiscal de remessa, a condição de pagamento da nota será fixada com a condição de pagamento informada neste campo. </p>
+                <p><strong>Local dos anexos dos itens:</strong> descreve os locais que os anexos dos itens serão salvos. </p>
+                <p><strong>Web Service (Autenticar pelo Active Directory):</strong> se estiver preenchido o sistema fará a validação do login do usuário empresa e comprador pelo AD, caso contrário a validação será feita pelo portal. </p>
+                <br>
+                <p><strong>Nota Fiscal Eletrônico</strong></p>
+                <p><strong>Caminho de Leitura:</strong> caminho onde se encontra os arquivos XML da NFe. Deve ser um diretório no próprio servidor do eProcurement ou um diretório na rede acessível pelo servidor eProcurement.</p>
+                <p><strong>Sub-série:</strong> Valor fixo que será gravado nas NFs importadas pela rotina de importação automática.</p>
+                <p><strong>Espécie:</strong> valor fixo que será gravado nas NFs importadas pela rotina de importação automática. </p>
+                <p><strong>Email:</strong> após fazer o upload da NFe pelo portal, o XML é enviado para o email informado neste campo. </p>
+                <p><strong>Email notificação:</strong> na importação automática, após o processamento do XML, é enviada uma notificação para esse email com o status da importação dos XMLs (Sucesso ou Erro). </p>
+                <p><strong>Formato Data:</strong> usado na criação do arquivo “.nf”. Exemplo: “AAAAMM-DD HH:MM:SS”.</p>
+                <p><strong>Código do idioma Inglês no ERP:</strong> código do idioma Inglês cadastrado no Logix. Utilizado para mostrar informações do item em inglês. </p>
+                <p><strong>Tipo (Canal Aberto):</strong> indica se no Canal Aberto haverá a opção para o fornecedor enviar sugestões e dúvidas sobre o eProcurement. </p>
+                <p><strong>Email do responsável pelas sugestões do Canal Aberto</strong></p>
+                <p><strong>Quantidade de linhas para exibição inicial do texto da OC</strong> (0 = Mostrar tudo).</p>
+                <p><strong>Exportação de cotações, diretório de armazenamento dos arquivos</strong> (Diretório previamente criado). </p>
+                <p><strong>Upload de cotações, diretório de armazenamento dos arquivos</strong> (Diretório previamente criado). </p>
+                <p><strong>Situação das ordens de compra disponíveis (em aberto) no eProcurement:</strong> descrever quais letras serão simbolizarão situações válidas na ferramenta. Exemplo: “A, B, C”. </p>
+                <p><strong>Diretório de armazenamento de anexos do contrato</strong></p>
+                <p><strong>Valor do campo IES_TIP_COTACAO da COTACAO_PRECO para criação da cotação</strong></p>
+                <p><strong>Etapa de aprovação de contratos:</strong> “ativo” ou “inativo” identifica se a etapa de aprovação de contratos fará parte do processo ou não. </p>
+
+                <button type="button" href="manutencao_textos.html" class="btn btn-warning" >Próxima Página</button>
+            </section>
+            <footer>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+            </footer>
+        </div>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Manual do Cliente - eProcurement</title>
+        <link rel="stylesheet" href="../../../../stylesheets/styles.css">
+        <link rel="stylesheet" href="../../../../stylesheets/github-dark.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../../../../javascripts/main.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    </head>
+    <body>
+
+        <header>
+            <h1>eProcurement</h1>
+            <p>Documentação do Cliente - eProcurement</p>
+        </header>
+
+        <div id="banner">
+            <span id="logo"></span>
+
+            <a href="../../../../index.html" class="button"><strong>Página Inicial</strong></a>
+
+            <div class="downloads">
+                <span>Downloads:</span>
+                <ul>
+                    <li><a href="https://github.com/eprocurement-lecom/eprocurement-lecom.github.io/releases/download/v4/Manual_eProcurement_v4-Clientes.pdf" class="button">Clientes</a></li>
+                </ul>
+            </div>
+        </div><!-- end banner -->
+
+        <div class="wrapper">
+            <nav>
+            </nav>
+            <section>
+                <h3>
+                    <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Menu Consultas</h3>
+                <p>Fornece acesso às consultas de OC (ordem de compra), Cotações e Pedidos.</p>
+
+                <h3>Consulta de OC</h3>
+                <p>Esta consulta possui diversos filtros que facilitam a pesquisa de OCs. Veja:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura25.png">
+                <p>Após informar os valores para os filtros desejados e clicar no botão “consultar”, é exibida uma listagem contendo informações da OC, como: número da OC, descrição do item, número do pedido, quantidade solicitada, nome do comprador, data de emissão e o texto da OC.</p>
+                <img src="../../../../../../images/eProc/cliente/cliente_figura26.png" >
+                <p>Observe que existem dois botões no rodapé das informações de cada OC chamados “Assinaturas” e “Cotações que participou”.</p>
+                <p>Ao clicar no botão “Assinaturas”, são exibidas informações das aprovações feitas antes da compra, como: nome, cargo e nível de autoridade de quem autorizou a compra. Isto se faz necessário em casos onde não se pode realizar a compra do item sem prévia autorização.</p>
+                <p>Ao clicar no botão “Cotações que participou”, são exibidas as informações das cotações que continham esta ordem de compra juntamente com as informações do orçamento de cada fornecedor. Veja a figura a seguir:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura27.png" >
+                <p>Neste exemplo, existiram duas cotações para este item de dois fornecedores diferentes onde cada fornecedor informou o seu preço, prazo de entrega, condição de pagamento, modo de embarque e a validade da proposta. A linha contendo as informações do fornecedor vencedor fica sempre destacada na cor amarela e com o símbolo.</p>
+                <p>Observe que as informações das colunas Fornecedor, Cotação, Cond. Pgto. e Modo de Embarque ficam sublinhados. Isto significa que é possível clicar sobre elas para obter mais detalhes.</p>
+                <p>Ao clicar sobre o nome do fornecedor, é exibido um detalhamento do mesmo, como mostra a figura a seguir:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura28.png" >
+                <p>Ao clicar sobre o número da cotação, são exibidos mais detalhes sobre a mesma, inclusive os demais itens desta cotação. Neste exemplo, serão visualizados os detalhes da cotação 1861, observe:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura29.png" >
+                <p>O item destacado na figura acima é o que se refere à ordem de compra de número 5525589 utilizada nos exemplos deste manual. Entretanto, pode-se verificar que, nesta mesma cotação, há outras ordens de compra para este mesmo item.</p>
+                <p>Na figura 29 acima (Detalhamento das cotações do item da OC), é exibido o número do pedido (841006) em que o item do exemplo foi solicitado. Clicando neste número, são exibidos todos os detalhes do pedido em questão, veja:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura30.png" >
+                <p>Para imprimir este pedido, basta clicar na imagem que fica no topo da tela.</p>
+
+                <br>
+                <h3>Transferência de ordem de compra</h3>
+                <p>A partir da versão 341.1.1 é possível fazer a transferência de ordem de compra, para isso faça a busca para que a cotação desejada apareça na listagem de cotações conforme a imagem abaixo.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura31.png" >
+                <p>Após efetuar a consulta, clique no botão “Transferir OC”, para que a modal de transferência apareça conforme a imagem abaixo.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura32.png" >
+                <p>Para efetuar a transferência, selecione o novo comprador na caixa de seleção e clique em gravar.</p>
+
+                <br>
+                <h3>Consulta de Cotações</h3>
+                <p>Esta consulta também oferece vários tipos de filtros que facilitam a pesquisa de cotações.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura33.png" >
+                <p>Após clicar no botão “consultar”, é exibida a listagem de cotações conforme mostra a figura a seguir:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura34.png" >
+                <p>Observe que existe uma coluna no canto esquerdo da listagem que exibe um símbolo que informa a situação de cada cotação. Existe uma legenda para estes símbolos que pode ser acessada clicando no link “Legenda” localizado no canto superior direito da tela de Consulta de Cotações (figura 34) e da tela de Listagem de Cotações. </p>
+                <img src="../../../../images/eProc/cliente/cliente_figura35.png" >
+                <p><storng>• Cotação “Sem nenhum item respondido”:</storng> é quando nenhuma das OCs desta cotação foi respondida.</p>
+                <p><strong>• Cotação “Respondida parcialmente”:</strong> é quando apenas algumas OCs foram respondidas, restando algumas sem respostas.</p>
+                <p><strong>• Cotação “Respondida totalmente”:</strong> é quando todas as OCs foram respondidas.</p>
+                <p><strong>• Cotação “Finalizada”:</strong> é quando todas as OCs foram respondidas e já foi designado um fornecedor vencedor para a cotação.</p>
+                <p><strong>• Cotação “Vencida”:</strong> é quando a data limite da resposta é superior a data atual (não considera a quantidade de OCs respondidas).</p>
+                <p><strong>• Cotação “Suspensa”:</strong> é quando o usuário alterou a situação da OC para suspensa.</p>
+                <p>A partir da versão 341.1.5 o status da cotação é alterado ao gerar uma nova rodada, e passa ao seu estado inicial novamente, sendo assim as cotações voltarão ao status ‘Sem nenhum item respondido’ caso o novo round seja gerado e os fornecedores ainda não tenham respondido nenhuma ordem de compra.</p>
+                <p>É possível visualizar detalhes de cada cotação listada. Basta clicar no botão “+” que fica na coluna Opções da listagem (veja a figura 29). Estes detalhes são informações do tipo: nome do fornecedor; quantidade de itens em aberto, respondidos e finalizados; datas e quantidades de e-mails de cobrança enviados, dentre outras.</p>
+                <p>Ainda na figura 30 podemos observar o acesso ao painel de análise da cotação que é o ícone na coluna ‘opções’, conforme imagem:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura36.png" >
+
+                <br>
+                <h3>Alteração de Cotação</h3>
+                <br>
+                <h3>Adicionar ordem de compra</h3>
+                <p>A partir da versão 341.1.5, após a criação de uma cotação é possível que o comprador adicione uma ordem de compra ou um fornecedor dentro da cotação.</p>
+                <p>Para isso ao buscar uma cotação o comprador deve clicar no ícone para alterar a cotação conforme a imagem abaixo.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura37.png" >
+                <p>Com isso aparecerá a tela para alteração de cotação conforme a imagem abaixo.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura38.png" >
+                <p> Para que uma OC seja inserida na cotação clicar no botão “Adicionar OC”, para que a modal de busca de ordens de compra apareça  conforme a imagem abaixo.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura39.png" >
+                <p>Após efetuar a buscar com as informações da ordem de compra, será listada as OCs correspondentes, dessa forma selecione as OCs desejadas e clique em gravar para que elas apareçam na listagem de OCs na tela de alteração de cotação, após isso as OCs serão inseridas dentro da cotação.</p>
+
+                <br>
+                <h3>Adicionar fornecedor</h3>
+                <p>Para adicionar um fornecedor seguir os passos da adição de cotação até chegar na tela de alteração de cotação, após isso clicar no botão “Adicionar fornecedor”, com isso aparecerá a modal para busca de fornecedores conforme a imagem abaixo.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura40.png" >
+                <p>Após efetuar a busca, será listado os fornecedores correspondentes a pesquisa, após isso clique no fornecedor desejado para que ele apareça na listagem de fornecedores da tela de alteração de cotação, após isso o fornecedor terá sido incluído com sucesso.</p>
+
+                <br>
+                <h3>Chat de cotação</h3>
+                <p>A partir da versão 341.1.0 é possível enviar perguntas para os fornecedores através das cotações para que não seja necessário enviar a pergunta por ordem de compra.</p>
+                <p>Para fazer o envio da mensagem, clique no ícone do chat conforme mostra a imagem abaixo.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura41.png" >
+                <p>Após clicar no ícone do chat, a tela para envio será exibida conforme a imagem abaixo.</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura42.png" >
+                <p>Após digitar a mensagem, ao clicar no botão enviar, o destinatário receberá a mensagem e o registro aparecerá no histórico de mensagens que esta localizado abaixo do botão enviar.</p>
+
+                <br>
+                <h3>Consulta de Pedidos</h3>
+                <p>A consulta de pedidos possui os seguintes filtros:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura43.png" >
+                <p>Após preencher os filtros da pesquisa conforme a sua necessidade e clicar no botão “consultar”, será exibida uma listagem constando todos os pedidos que se encaixam nestes filtros. Para efeito demonstrativo, foi utilizado o número do pedido como filtro, observe:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura44.png" >
+                <p>Na listagem exibida acima, existem os campos e opções:</p>
+                <p><strong>• Número do pedido;</strong></p>
+                <p><strong>• Data:</strong> data de emissão do pedido;</p>
+                <p><storng>• Situação do pedido: </storng></p>
+                <p><strong>o Aberto:</strong> pedido ainda não realizado e que pode ser alterado;</p>
+                <p><strong>o Atrasado:</strong> pedido cujos itens estão com programação de entrega em vigor e a data de entrega é inferior à data atual;</p>
+                <p><strong>o Cancelado;</strong></p>
+                <p><strong>o Liquidado:</strong> pedido com todos os itens entregues pelo fornecedor.</p>
+                <p><strong>o Realizado:</strong> pedido já realizado que não permite alteração; se for necessário alterá-lo, será preciso criar uma nova versão do mesmo;</p>
+                <p><strong>• Confirmação:</strong></p>
+                <p><strong>o Aguardando:</strong> pedido aguardando confirmação do fornecedor;</p>
+                <p><strong>o Confirmado:</strong> pedido confirmado pelo fornecedor;</strong></p>
+                <p><strong>• Data da confirmação ou do cancelamento;</strong></p>
+                <p><strong>• Preço total final;</strong></p>
+                <p><strong>• Nome do fornecedor;</strong></p>
+                <p><strong>• Opções:</strong></p>
+                <p><strong>o Envio de e-mail de cobrança do pedido:</strong> ao clicar no envelope é exibida a tela a seguir:</p>
+                <img src="../../../../images/eProc/cliente/cliente_figura45.png" >
+                <p>Nesta tela, é possível redigir um e-mail de cobrança do pedido para ser enviado ao fornecedor;</p>
+                <p><strong>o Exibir/ocultar os detalhes do pedido:</strong> ao clicar no “+” e “-”, são exibidos ou ocultados os detalhes do pedido; estes detalhes mostram a razão social do fornecedor, o nome do comprador, as datas do primeiro e último envio de e-mail de cobrança e a quantidade de e-mails enviados (observe a figura 32 acima). </p>
+                <p>Na listagem de pedidos é possível clicar sobre os pedidos listados para visualizar os detalhes dos mesmos. A tela exibida quando se clica sobre um pedido, é a mesma tela da figura 27 deste manual.</p>
+
+                <button type="button" href="menu_informacoes_financeiras.html" class="btn btn-warning" >Próxima Página</button>
+            </section>
+            <footer>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+            </footer>
+        </div>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    </body>
+</html>
