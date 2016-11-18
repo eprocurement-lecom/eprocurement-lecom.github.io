@@ -732,6 +732,7 @@ header p {
 
 #banner .menuitem {
     float: left;
+    height: 100%;
 }
 #banner .button:hover {
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffe788));

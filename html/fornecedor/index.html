@@ -23,13 +23,50 @@
         </header>
 
         <div id="banner">
-            <div class="downloads">
-                <span>Downloads:</span>
-                <ul>
-                    <li><a href="https://github.com/eprocurement-lecom/eprocurement-lecom.github.io/releases/download/v4/Manual_eProcurement_v4-Clientes.pdf" class="button">Clientes</a></li>
+			      <div class="menuitem">
+				        <a href="index.html" class="button" >Introdução</a>
+			      </div>
+
+            <div class="menuitem" >
+                <button class="button dropdown-toggle" type="button" data-toggle="dropdown">Módulo Fornecedores
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="submenu">
+                        <a class="button test" tabindex="-1" href="Usuarios/Master/usuario_master.html">Menu Consultas"</a>
+                        <a class="button test" tabindex="-1" href="Usuarios/Master/usuario_master.html">Menu Notas Fiscais</a>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="button test" tabindex="-1" href="#">Usuário "Empresa" <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="button" tabindex="-1" href="Usuarios/Empresa/menu_consultas.html">Menu Consultas</a></li>
+                            <li><a class="button" tabindex="-1" href="Usuarios/Empresa/menu_informacoes_financeiras.html">Menu Informações Financeiras</a></li>
+                            <li><a class="button" tabindex="-1" href="Usuarios/Empresa/menu_relatorios.html">Menu Relatórios</a></li>
+                            <li><a class="button" tabindex="-1" href="Usuarios/Empresa/menu_canal_aberto.html">Menu Canal Aberto</a></li>
+                            <li><a class="button" tabindex="-1" href="Usuarios/Empresa/menu_gerenciamento.html">Menu Gerenciamento</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="button test" tabindex="-1" href="#">Usuário "Comprador" <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="button" tabindex="-1" href="Usuarios/Comprador/painel_analise.html">Painel de Análise</a></li>
+                            <li><a class="button" tabindex="-1" href="Usuarios/Comprador/criacao_cotacao.html">Criação de Cotação</a></li>
+                            <li><a class="button" tabindex="-1" href="Usuarios/Comprador/anexo_e_observacao_cotacao.html">Anexo e Observação de Cotação</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a class="button" tabindex="-1" href="tipos_usuario.html">Usuário "Programador"</a>
+                    </li>
                 </ul>
             </div>
-        </div><!-- end banner -->
+            <div class="menuitem">
+                <button class="button dropdown-toggle" type="button" data-toggle="dropdown">Modulo Fornecedor <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="button test" tabindex="-1" href="modulo_fornecedor/gerenciamento_fornecedores.html">Gerenciamento de Fornecedores</a>
+                        <a class="button test" tabindex="-1" href="modulo_fornecedor/menu_consultas.html">Menu Consultas</a>
+                    </li>
+                </ul>
+            </div>
 
         <div class="wrapper">
             <section>

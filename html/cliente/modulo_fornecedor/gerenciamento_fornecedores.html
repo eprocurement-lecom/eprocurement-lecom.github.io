@@ -1,64 +1,120 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Manual do Cliente - eProcurement</title>
-    <link rel="stylesheet" href="../../../stylesheets/styles.css">
-    <link rel="stylesheet" href="../../../stylesheets/github-dark.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../../../javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Manual do Cliente - eProcurement</title>
+        <link rel="stylesheet" href="../../../stylesheets/styles.css">
+        <link rel="stylesheet" href="../../../stylesheets/github-dark.css">
+        <link rel="stylesheet" href="../../../stylesheets/dropdown.css" >
+        <link rel="stylesheet" href="../../../stylesheets/bootstrap.css" >
 
-  </head>
-  <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="../../../javascripts/main.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-      <header>
-        <h1>eProcurement</h1>
-        <p>Documentação do Cliente - eProcurement</p>
-      </header>
+    </head>
+    <body>
 
-      <div id="banner">
-          <span id="logo"></span>
+        <header>
+            <h1>eProcurement</h1>
+            <p>Documentação do Cliente - eProcurement</p>
+        </header>      <div id="banner">
+			      <div class="menuitem">
+				        <a href="index.html" class="button" >Introdução</a>
+			      </div>
+			      <div class="menuitem">
+				        <a href="../modulo_cliente.html" class="button" >Módulo Clientes</a>
+			      </div>
+			      <div class="menuitem">
+				        <a href="../autenticacao.html" class="button" >Autenticação</a>
+			      </div>
 
-          <a href="../../index.html" class="button"><strong>Página Inicial</strong></a>
+            <div class="menuitem" >
+                <button class="button dropdown-toggle" type="button" data-toggle="dropdown">Tipos de Usuário
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="button test" tabindex="-1" href="#">Usuário "Master" <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Master/manutencao_empresas.html">Manutenção - Empresas</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Master/manutencao_textos.html">Manutenção - Textos</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Master/manutencao_upload.html">Manutenção - Upload</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Master/manutencao_log.html">Manutenção - Log</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Master/manutencao_envio_email.html">Manutenção - Envio de Emails</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Master/agendador_dias_nao_trabalhados.html">Agendador - Dias Não Trabalhados</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Master/agendador_feriados.html">Agendador - Feriados</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Master/agendador_upload.html">Agendador - Upload (pacotes)</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Master/agendador_rotinas.html">Agendador - Rotinas</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="button test" tabindex="-1" href="#">Usuário "Empresa" <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Empresa/menu_consultas.html">Menu Consultas</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Empresa/menu_informacoes_financeiras.html">Menu Informações Financeiras</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Empresa/menu_relatorios.html">Menu Relatórios</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Empresa/menu_canal_aberto.html">Menu Canal Aberto</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Empresa/menu_gerenciamento.html">Menu Gerenciamento</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="button test" tabindex="-1" href="#">Usuário "Comprador" <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Comprador/painel_analise.html">Painel de Análise</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Comprador/criacao_cotacao.html">Criação de Cotação</a></li>
+                            <li><a class="button" tabindex="-1" href="../Usuarios/Comprador/anexo_e_observacao_cotacao.html">Anexo e Observação de Cotação</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a class="button" tabindex="-1" href="../tipos_usuario.html">Usuário "Programador"</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menuitem">
+                <button class="button dropdown-toggle" type="button" data-toggle="dropdown">Modulo Fornecedor <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="submenu">
+                        <a class="button test" tabindex="-1" href="gerenciamento_fornecedores.html">Gerenciamento de Fornecedores</a>
+                        <a class="button test" tabindex="-1" href="menu_consultas.html">Menu Consultas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <div class="wrapper">
+            <section>
+                <h3>
+                    <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Consulta de Fornecedores</h3>
+                <p>No menu gerenciamento, ao clicar na tela de fornecedores, aparecerá a consulta de fornecedores conforme  a imagem abaixo.</p>
+                <img src="../../../images/eProc/cliente/cliente_figura85.png" >
+                <p>Ao adicionar os filtros desejados, será feita a listagem de fornecedores conforme a imagem abaixo.</p>
+                <img src="../../../images/eProc/cliente/cliente_figura86.png" >
 
-          <div class="downloads">
-              <span>Downloads:</span>
-              <ul>
-                  <li><a href="https://github.com/eprocurement-lecom/eprocurement-lecom.github.io/releases/download/v4/Manual_eProcurement_v4-Clientes.pdf" class="button">Clientes</a></li>
-              </ul>
-          </div>
-      </div><!-- end banner -->
+                <h3>Edição de Fornecedores</h3>
+                <p>Para editar um fornecedor clique no CPNJ do fornecedor desejado para que a tela de edição seja mostrada conforme a imagem abaixo.</p>
+                <img src="../../../images/eProc/cliente/cliente_figura87.png" >
 
-    <div class="wrapper">
-        <nav>
-        </nav>
-      <section>
-          <h3>
-              <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Consulta de Fornecedores</h3>
-          <p>No menu gerenciamento, ao clicar na tela de fornecedores, aparecerá a consulta de fornecedores conforme  a imagem abaixo.</p>
-          <img src="../../../images/eProc/cliente/cliente_figura85.png" >
-          <p>Ao adicionar os filtros desejados, será feita a listagem de fornecedores conforme a imagem abaixo.</p>
-          <img src="../../../images/eProc/cliente/cliente_figura86.png" >
+                <h3>Ativação do fornecedor para todas as empresas</h3>
+                <p>A partir da versão 341.1.5, ao clicar em “Executar está ação para as demais empresas ativas” o fornecedor será ativado para todas as empresas ativas no e-Procurement.</p>
 
-          <h3>Edição de Fornecedores</h3>
-          <p>Para editar um fornecedor clique no CPNJ do fornecedor desejado para que a tela de edição seja mostrada conforme a imagem abaixo.</p>
-          <img src="../../../images/eProc/cliente/cliente_figura87.png" >
-
-          <h3>Ativação do fornecedor para todas as empresas</h3>
-          <p>A partir da versão 341.1.5, ao clicar em “Executar está ação para as demais empresas ativas” o fornecedor será ativado para todas as empresas ativas no e-Procurement.</p>
-
-          <li><a href="menu_consultas.html" class="button">Próxima Página</a></li>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
+            </section>
+            <footer>
+                <p><small>Documentação do sistema eProcurement desenvolvida por <a href="http://www.lecom.com.br/">Lecom SA</a></small></p>
+            </footer>
+        </div>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        <script>
+         $(document).ready(function(){
+             $('.dropdown-submenu a.test').on("click", function(e){
+                 $(this).next('ul').toggle();
+                 e.stopPropagation();
+                 e.preventDefault();
+             });
+         });
+        </script>
+    </body>
 </html>
