@@ -6,8 +6,11 @@
         <title>Manual do Fornecedor - eProcurement</title>
         <link rel="stylesheet" href="../../stylesheets/styles.css">
         <link rel="stylesheet" href="../../stylesheets/github-dark.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../stylesheets/dropdown.css" >
+        <link rel="stylesheet" href="../../stylesheets/bootstrap.css" >
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="../../javascripts/main.js"></script>
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,7 +24,6 @@
             <h1>eProcurement</h1>
             <p>Documentação do Fornecedor - eProcurement</p>
         </header>
-
         <div id="banner">
 			      <div class="menuitem">
 				        <a href="index.html" class="button" >Introdução</a>
@@ -32,42 +34,13 @@
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <li class="submenu">
-                        <a class="button test" tabindex="-1" href="Usuarios/Master/usuario_master.html">Menu Consultas"</a>
-                        <a class="button test" tabindex="-1" href="Usuarios/Master/usuario_master.html">Menu Notas Fiscais</a>
-                    </li>
-                    <li class="dropdown-submenu">
-                        <a class="button test" tabindex="-1" href="#">Usuário "Empresa" <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="button" tabindex="-1" href="Usuarios/Empresa/menu_consultas.html">Menu Consultas</a></li>
-                            <li><a class="button" tabindex="-1" href="Usuarios/Empresa/menu_informacoes_financeiras.html">Menu Informações Financeiras</a></li>
-                            <li><a class="button" tabindex="-1" href="Usuarios/Empresa/menu_relatorios.html">Menu Relatórios</a></li>
-                            <li><a class="button" tabindex="-1" href="Usuarios/Empresa/menu_canal_aberto.html">Menu Canal Aberto</a></li>
-                            <li><a class="button" tabindex="-1" href="Usuarios/Empresa/menu_gerenciamento.html">Menu Gerenciamento</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                        <a class="button test" tabindex="-1" href="#">Usuário "Comprador" <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="button" tabindex="-1" href="Usuarios/Comprador/painel_analise.html">Painel de Análise</a></li>
-                            <li><a class="button" tabindex="-1" href="Usuarios/Comprador/criacao_cotacao.html">Criação de Cotação</a></li>
-                            <li><a class="button" tabindex="-1" href="Usuarios/Comprador/anexo_e_observacao_cotacao.html">Anexo e Observação de Cotação</a></li>
-                        </ul>
-                    </li>
-                    <li class="submenu">
-                        <a class="button" tabindex="-1" href="tipos_usuario.html">Usuário "Programador"</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="menuitem">
-                <button class="button dropdown-toggle" type="button" data-toggle="dropdown">Modulo Fornecedor <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                        <a class="button test" tabindex="-1" href="modulo_fornecedor/gerenciamento_fornecedores.html">Gerenciamento de Fornecedores</a>
                         <a class="button test" tabindex="-1" href="modulo_fornecedor/menu_consultas.html">Menu Consultas</a>
+                        <a class="button test" tabindex="-1" href="modulo_fornecedor/menu_notas_fiscais.html">Menu Notas Fiscais</a>
+                        <a class="button test" tabindex="-1" href="modulo_fornecedor/esqueci_senha.html" >Esqueci Minha Senha</a>
                     </li>
                 </ul>
             </div>
-
+        </div>
         <div class="wrapper">
             <section>
                 <h3>
@@ -79,12 +52,20 @@
                 <img src="../../images/eProc/fornecedor/fornec_figura1.png">
                 <p>Note que, existem duas opções logo abaixo dos botões “entrar” e “limpar” chamadas “módulo clientes” e “módulo fornecedores”, basta clicar sobre a opção desejada para acessar seu respectivo módulo. </p>
                 <p>A ferramenta está preparada para funcionar com dois idiomas: Português e Inglês. Para alternar entre os dois idiomas, basta clicar sobre a bandeira correspondente ao idioma desejado (observe a figura 1). Fazendo isto, automaticamente a página será atualizada e as informações estarão escritas no idioma selecionado. </p>
-                <button type="button" href="modulo_fornecedor/index.html" class="btn btn-warning" >Próxima Página</button>
             </section>
             <footer>
-                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+                <p><small>Documentação do sistema eProcurement desenvolvida por <a href="http://www.lecom.com.br/">Lecom SA</a></small></p>
             </footer>
         </div>
         <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        <script>
+         $(document).ready(function(){
+             $('.dropdown-submenu a.test').on("click", function(e){
+                 $(this).next('ul').toggle();
+                 e.stopPropagation();
+                 e.preventDefault();
+             });
+         });
+        </script>
     </body>
 </html>

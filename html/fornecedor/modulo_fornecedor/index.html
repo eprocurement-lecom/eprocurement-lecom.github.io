@@ -6,8 +6,11 @@
         <title>Manual do Cliente - eProcurement</title>
         <link rel="stylesheet" href="../../../stylesheets/styles.css">
         <link rel="stylesheet" href="../../../stylesheets/github-dark.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../stylesheets/dropdown.css" >
+        <link rel="stylesheet" href="../../../stylesheets/bootstrap.css" >
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="../../../javascripts/main.js"></script>
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,29 +23,44 @@
             <h1>eProcurement</h1>
             <p>Documentação do Cliente - eProcurement</p>
         </header>
-
         <div id="banner">
-            <div class="downloads">
-                <span>Downloads:</span>
-                <ul>
-                    <li><a href="https://github.com/eprocurement-lecom/eprocurement-lecom.github.io/releases/download/v4/Manual_eProcurement_v4-Clientes.pdf" class="button">Fornecedor</a></li>
+			      <div class="menuitem">
+				        <a href="../index.html" class="button" >Introdução</a>
+			      </div>
+
+            <div class="menuitem" >
+                <button class="button dropdown-toggle" type="button" data-toggle="dropdown">Módulo Fornecedores
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="submenu">
+                        <a class="button test" tabindex="-1" href="menu_consultas.html">Menu Consultas</a>
+                        <a class="button test" tabindex="-1" href="menu_notas_fiscais.html">Menu Notas Fiscais</a>
+                        <a class="button test" tabindex="-1" href="esqueci_senha.html" >Esqueci Minha Senha</a>
+                    </li>
                 </ul>
             </div>
-        </div><!-- end banner -->
-
+        </div>
         <div class="wrapper">
             <section>
                 <h3>
                     <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modulo Fornecedores</h3>
                 <p>Este módulo permite que os fornecedores acessem informações destinadas a eles ou geradas por eles. Por exemplo: o fornecedor pode verificar para quais cotações ele ainda não enviou um orçamento, quais notas fiscais ele já gerou e gerar novas notas fiscais, ou seja, cada fornecedor pode visualizar cotações, pedidos, notas fiscais, estatísticas, dentre outras informações pertencentes a ele. </p>
                 <p>Existe um campo chamado “Empresa” logo no topo da página onde pode-se escolher uma empresa. Se nenhuma empresa for escolhida, todas as consultas da ferramenta buscarão informações de todas as empresas as quais o fornecedor logado tem como cliente. Se uma empresa for escolhida neste campo, as consultas só buscarão informações da empresa selecionada neste campo. </p>
-                
-                <button type="button" href="menu_consultas.html" class="btn btn-warning" >Próxima Página</button>
+
             </section>
             <footer>
-                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+                <p><small>Documentação do sistema eProcurement desenvolvida por <a href="http://www.lecom.com.br/">Lecom SA</a></small></p>
             </footer>
         </div>
         <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        <script>
+         $(document).ready(function(){
+             $('.dropdown-submenu a.test').on("click", function(e){
+                 $(this).next('ul').toggle();
+                 e.stopPropagation();
+                 e.preventDefault();
+             });
+         });
+        </script>
     </body>
 </html>

@@ -6,8 +6,11 @@
         <title>Manual do Fornecedor - eProcurement</title>
         <link rel="stylesheet" href="../../../stylesheets/styles.css">
         <link rel="stylesheet" href="../../../stylesheets/github-dark.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../stylesheets/dropdown.css" >
+        <link rel="stylesheet" href="../../../stylesheets/bootstrap.css" >
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="../../../javascripts/main.js"></script>
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -23,17 +26,22 @@
         </header>
 
         <div id="banner">
-            <span id="logo"></span>
+			      <div class="menuitem">
+				        <a href="index.html" class="button" >Introdução</a>
+			      </div>
 
-            <a href="../../../index.html" class="button"><strong>Página Inicial</strong></a>
-
-            <div class="downloads">
-                <span>Downloads:</span>
-                <ul>
-                    <li><a href="https://github.com/eprocurement-lecom/eprocurement-lecom.github.io/releases/download/v4/Manual_eProcurement_v4-Fornecedores.pdf" class="button">Fornecedores</a></li>
+            <div class="menuitem" >
+                <button class="button dropdown-toggle" type="button" data-toggle="dropdown">Módulo Fornecedores
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="submenu">
+                        <a class="button test" tabindex="-1" href="menu_consultas.html">Menu Consultas</a>
+                        <a class="button test" tabindex="-1" href="menu_notas_fiscais.html">Menu Notas Fiscais</a>
+                        <a class="button test" tabindex="-1" href="esqueci_senha.html" >Esqueci Minha Senha</a>
+                    </li>
                 </ul>
             </div>
-        </div><!-- end banner -->
+        </div>
 
         <div class="wrapper">
             <section>
@@ -113,13 +121,20 @@
                 <img src="../../../images/eProc/fornecedor/fornec_figura21.png">
                 <img src="../../../images/eProc/fornecedor/fornec_figura22.png">
                 <p>Para desvincular um vendedor de uma ou mais cotações, basta consultar as cotações filtrando pelo vendedor e, na listagem de cotações, desmarcar as cotações que desejar. </p>
-                
-                <button type="button" href="esqueci_senha.html" class="btn btn-warning" >Próxima Página</button>
             </section>
             <footer>
-                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+                <p><small>Documentação do sistema eProcurement desenvolvida por <a href="http://www.lecom.com.br/">Lecom SA</a></small></p>
             </footer>
         </div>
         <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        <script>
+         $(document).ready(function(){
+             $('.dropdown-submenu a.test').on("click", function(e){
+                 $(this).next('ul').toggle();
+                 e.stopPropagation();
+                 e.preventDefault();
+             });
+         });
+        </script>
     </body>
 </html>
